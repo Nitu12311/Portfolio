@@ -7,60 +7,87 @@ interface ExperienceSectionProps {
 
 const ExperienceSection: React.FC<ExperienceSectionProps> = ({ darkMode }) => {
 
-  const experiences = [
-    {
-      title: "Senior Digital Marketing Specialist",
-      company: "Tech Solutions Inc.",
-      location: "Remote",
-      duration: "Jan 2023 - Present",
-      type: "Full-time",
-      description: "Led comprehensive digital marketing campaigns across multiple channels, driving 150% increase in online engagement and 40% growth in lead generation.",
-      achievements: [
-        "Managed $50K+ monthly ad spend across Google, Facebook, and LinkedIn",
-        "Developed brand identity for 15+ clients resulting in 200% social media growth",
-        "Implemented data-driven strategies that improved ROI by 65%"
-      ],
-      skills: ["Google Ads", "Facebook Marketing", "Brand Strategy", "Analytics"],
-      icon: <TrendingUp className="w-5 h-5" />
-    },
-    {
-      title: "Graphic Designer & Social Media Manager",
-      company: "Creative Studio Agency",
-      location: "New York, NY",
-      duration: "Jun 2021 - Dec 2022",
-      type: "Full-time",
-      description: "Created compelling visual content and managed social media presence for diverse clientele, from startups to established brands.",
-      achievements: [
-        "Designed 200+ marketing materials including logos, brochures, and web graphics",
-        "Grew client social media followers by average of 300% within 6 months",
-        "Collaborated with cross-functional teams on 25+ successful campaigns"
-      ],
-      skills: ["Adobe Creative Suite", "Social Media Strategy", "Content Creation", "Brand Design"],
-      icon: <Award className="w-5 h-5" />
-    },
-    {
-      title: "Freelance Digital Marketing Consultant",
-      company: "Self-Employed",
-      location: "Remote",
-      duration: "Mar 2020 - May 2021",
-      type: "Freelance",
-      description: "Provided strategic digital marketing solutions to small and medium businesses, focusing on brand development and online presence optimization.",
-      achievements: [
-        "Successfully launched digital presence for 20+ local businesses",
-        "Achieved average 180% increase in client website traffic",
-        "Built long-term relationships with 85% client retention rate"
-      ],
-      skills: ["SEO/SEM", "Content Marketing", "Email Marketing", "Client Relations"],
-      icon: <Users className="w-5 h-5" />
-    }
-  ];
+const experiences = [
+  {
+    title: "Digital Marketing & Graphic Designing Intern",
+    company: "Mithila Stack",
+    location: "Darbhanga",
+    duration: "Mar 2025 – Present",
+    type: "Internship",
+    description:
+      "Designing UI/UX for websites and creating engaging posters for social media platforms. Executing advertising strategies to drive brand engagement and lead generation.",
+    achievements: [
+      "Managed email campaigns and social media handles on Instagram and LinkedIn",
+      "Executed Google and Meta Ads campaigns to boost engagement",
+      "Created modern, responsive UI/UX designs for client websites"
+    ],
+    skills: [
+      "UI/UX Design",
+      "Canva",
+      "Google Ads",
+      "Meta Ads",
+      "Email Marketing",
+      "Capcut"
+    ],
+    icon: <TrendingUp className="w-5 h-5" />
+  },
+  {
+    title: "Freelance Graphic Designer & Video Editor",
+    company: "Elevate Edits",
+    location: "Remote",
+    duration: "Dec 2024 – Feb 2025",
+    type: "Freelance",
+    description:
+      "Worked with clients to enhance their brand through visual storytelling, consistent design language, and professional video editing.",
+    achievements: [
+      "Created impactful social media graphics aligned with client branding",
+      "Edited high-quality videos to boost online engagement",
+      "Maintained client satisfaction with timely, professional delivery"
+    ],
+    skills: [
+      "Adobe Premiere Pro",
+      "Canva",
+      "Video Editing",
+      "Content Creation",
+      "Graphic Design"
+    ],
+    icon: <Award className="w-5 h-5" />
+  },
+  {
+    title: "Social Media Manager",
+    company: "Robo-Junction",
+    location: "Remote",
+    duration: "Apr 2024 – Sept 2024",
+    type: "Part-time",
+    description:
+      "Managed and grew Robo-Junction’s online presence through engaging posts, community interaction, and strategic content scheduling.",
+    achievements: [
+      "Increased followers and views through creative campaigns",
+      "Enhanced brand visibility via regular and targeted posts",
+      "Built an active community of engaged users"
+    ],
+    skills: [
+      "Social Media Strategy",
+      "Content Planning",
+      "Community Engagement",
+      "Analytics",
+      "Instagram & LinkedIn Marketing"
+    ],
+    icon: <Users className="w-5 h-5" />
+  }
+];
+
 
   return (
-    <section className={`w-full transition-all duration-300 ${
-      darkMode 
-        ? 'bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900' 
-        : 'bg-gradient-to-br from-gray-50 via-white to-gray-100'
-    }`}>
+   <section
+  id="experience"
+  className={`w-full transition-all duration-300 ${
+    darkMode 
+      ? 'bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900' 
+      : 'bg-gradient-to-br from-gray-50 via-white to-gray-100'
+  }`}
+>
+
       <div className="max-w-6xl mx-auto px-6 py-16">
         {/* Header */}
         <div className="text-center mb-16">
