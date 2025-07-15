@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import PortfolioSection from './components/PortfolioSection';
 import MarketingSection from './components/MarketingSection';
+import ExperienceSection from './components/ExperienceSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 export function App() {
@@ -34,6 +35,7 @@ export function App() {
         <AboutSection darkMode={darkMode} />
         <PortfolioSection darkMode={darkMode} />
         <MarketingSection darkMode={darkMode} />
+        <ExperienceSection darkMode={darkMode}/>
         <ContactSection darkMode={darkMode} />
       </main>
       <Footer darkMode={darkMode} />

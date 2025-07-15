@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { BarChartIcon, MailIcon, SearchIcon, LineChartIcon } from 'lucide-react';
+import google from '../images/google-ads.png'
 interface MarketingSectionProps {
   darkMode: boolean;
 }
@@ -29,7 +30,7 @@ const MarketingSection: React.FC<MarketingSectionProps> = ({
     description: 'Performance-focused Google Ad campaigns with optimized bidding and targeting strategies.',
     icon: <BarChartIcon size={32} />,
     stats: '3.5x ROAS',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+    image: google
   }, {
     title: 'Meta Ads',
     description: 'Engaging Facebook and Instagram ad campaigns designed for maximum engagement and conversions.',

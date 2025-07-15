@@ -30,6 +30,10 @@ const Navbar: React.FC<NavbarProps> = ({
   }, {
     name: 'Marketing',
     href: '#marketing'
+  },
+   {
+    name: 'Experience',
+    href: '#experience'
   }, {
     name: 'Contact',
     href: '#contact'

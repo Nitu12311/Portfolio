@@ -1,5 +1,6 @@
 import React, { useRef, Children } from 'react';
 import { motion, useInView } from 'framer-motion';
+import nitu from "../images/Nitu.png";
 interface AboutSectionProps {
   darkMode: boolean;
 }
@@ -102,7 +103,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
         }} className="relative">
             <div className={`absolute -inset-4 rounded-xl ${darkMode ? 'bg-indigo-500/10' : 'bg-pink-500/10'} -z-10 transform rotate-3`}></div>
             <div className={`absolute -inset-4 rounded-xl ${darkMode ? 'bg-purple-500/10' : 'bg-blue-500/10'} -z-10 transform -rotate-3`}></div>
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Nitu Jha" className="w-full h-auto rounded-xl shadow-xl" />
+            <img src={nitu} alt="Nitu Jha" className="w-full h-auto rounded-xl shadow-xl" />
           </motion.div>
           <motion.div variants={containerVariants} initial="hidden" animate={isInView ? 'visible' : 'hidden'}>
             <motion.h3 variants={itemVariants} className="text-2xl font-semibold mb-6">
